@@ -18,8 +18,11 @@ http
       .then(function (response) {
         
         // handle success
-        console.log(typeof(response));
-        
+        getFileContent((content)=>{
+            console.log(content)
+            //TODO: File writing and sending
+        })
+
       })
       .catch(function (error) {
         // handle error
